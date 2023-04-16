@@ -1,0 +1,45 @@
+
+:root{
+
+    --cor0:#613200;
+    --cor1:#AD5A00;
+    --cor2:#7A5125;
+    --cor3:#AD7334;
+}
+
+
+body{
+   margin:auto;
+    min-width: 400px;
+    max-width: 1500px;
+    box-shadow: 0px 0px 10px rgb(133, 133, 133);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    background-color:beige;
+}
+
+header{
+    text-align: center;
+    
+}
+header h1{
+    color: #613200;
+}
+
+nav{
+    text-align: center;
+    background-color: #AD5A00;
+    
+}
+
+main {
+    text-align: center;
+
+}
+main h1,h2{
+    color: var(--cor0);
+}
+main p, td, th, li{
+    
+    color: #AD5A00;
+}

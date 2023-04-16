@@ -1,96 +1,36 @@
 <DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
-            <title> Currículo Ana Santos</title>
-        </head>
-        <body>
-            <div id="apresentação">
-                <center>
-                    <h1>Ana Carla K B dos Santos</h1> 
-                    <img src="./perfil.jpeg" alt="Ana" width="180" height="180"> 
-                </center>
-                <hr>
-            </div>
-           
-            <div id="DadosPessoais">
-                <h2> Dados Pessoais:</h2>
-                <li><b>Email:</b>anackbsantos@fac.pe.senac.br</li>
-                <li><b>Telefone:</b>(81)973242022</li>
-                <li><b>Endereço:</b>UFPE</li>
-                <br>
-            </div>
-            
-            <div>  
-            <a href="https://www.linkedin.com/in/ana-carla-santos-b9514b251/" target="_blank"><b>Linkedin</b></a>
-            <a href="https://github.com/anacarlasantos" target="_blank"><b>GitHub</b></a>
-        
-            <hr>
-          </div> 
-        
-                <div id="Sobre">
-                    <h2><b>Sobre:</b></h2>
-                    <p>
-                Prazer, sou Ana Santos, graduanda em Administração na UFPE e Analise e Desenvolvimento de Sistemas no SENAC, atuo na área Financeira há um ano e meio, com experiência na administração pública e atualmente migrando para administração privada com uma empresa de cibersegurança. 
-                Tenho um considerável interesse em Dados, focando meus estudos para que possa unir as melhores características dos dois cursos, me tornando a cada dia uma profissional ainda melhor.
-                    </p>
-                    <hr>
-                </div>
-            
-            <div id="formacao">
-                <h2><b>Formação Academica:</b></h2>
-        
-            <center>
-                <table>
-                    <tr>
-                        <th>Curso</th>
-                        <th>Instituição</th>
-                        <th>Período</th>
-                    </tr>
-        
-                    <tr>
-                        <td>Graduação em Administração</td>
-                        <td>Universidade Federal de Pernambuco(UFPE)</td>
-                        <td>2019 a 2025</td>
-                
-                    </tr>
-        
-                    <tr>
-                        <td>Graduação em Análise e Desenvolvimento de Sistemas</td>
-                        <td>Faculdade SENAC Recife</td>
-                        <td>2022 a 2024</td>
-                    </tr>
-            
-                </table>
-            </center>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+        <title> Currículo Ana Santos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="./perfil.jpeg" alt="Foto Ana" width="180" height="180">
+            <h1>Ana Carla K B dos Santos</h1> 
+                <a href="./dadospessoais.html" target="_blank">Dados Pessoais</a> |
+                <a href="./sobremim.html" target="_blank">Sobre Mim</a> |
+                <a href="./formaçãoacademica.html" target="_blank">Formação Acadêmica</a> |
+                <a href="./formaçãoComplementar.htm" target="_blank">Formação Complementar</a>           
+        </header>
+      
         <hr>
-            </div>
-        
-            <div id="formacaocomp">
-                <h2>Formação Complementar:</h2>
-                <ol>
-                    <li>Curso de Inglês- PGM</li>
-                    <li>Scrum Foundation Professional-CertiProf</li>
-                </ol>
-        <hr>
-            </div>
-            <div id="portfolio">
-                <h2>Portfólio:</h2>
-                <center>
-                    <p>Apresento o projeto realizado na Residênciado Porto Digital:</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ydODR_v6aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </center>
-            </div>
-        
-            <div id="mapaend">
-            <adress>
-                Desenvolvido por:<a href="anackbsantos@fac.pe.senac.br">Ana Carla Santos</a>.<br>
-                Recife, Pe-Brasil
-            </adress>
-            </div>
-                
-        </body>
-        </html>
+            <main>
+                     
+            <h2>Portfólio:</h2>
+                <p>Apresento o projeto realizado na Residênciado Porto Digital:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ydODR_v6aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </main>
+    
+        <adress>
+            Desenvolvido por:<a href="anackbsantos@fac.pe.senac.br">Ana Carla Santos</a>.<br>
+            Recife, Pe-Brasil
+        </adress>
+       
+            
+    </body>
+    </html>
